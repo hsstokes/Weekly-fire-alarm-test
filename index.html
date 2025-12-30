@@ -6,9 +6,6 @@
 <title>Weekly Fire Alarm Test</title>
 
 <style>
-/* ==============================
-   BASE STYLES
-============================== */
 body {
 	font-family: 'Orator st','Typewriter condensed','Courier New', monospace;
 	font-size: 12px;
@@ -21,9 +18,6 @@ body {
 	padding: 20px;
 }
 
-/* ==============================
-   PAGE FRAME
-============================== */
 .page-wrapper {
 	max-width: 640px;
 	margin: auto;
@@ -40,9 +34,6 @@ body {
 	background-color: #f9f2e2;
 }
 
-/* ==============================
-   TYPOGRAPHY BLOCKS
-============================== */
 h1 {
 	text-align: center;
 	border: 2px dotted #2980b9;
@@ -62,9 +53,6 @@ p {
 	margin-bottom: 15px;
 }
 
-/* ==============================
-   STEP UNITS
-============================== */
 .step {
 	border: 2px dotted #2980b9;
 	border-radius: 15px;
@@ -81,9 +69,16 @@ p {
 	margin-bottom: 3px;
 }
 
-/* ==============================
-   VISUAL STRUCTURE
-============================== */
+.step ol {
+	margin: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.step li {
+	margin-bottom: 4px;
+}
+
 .dotted-divider {
 	border: none;
 	border-top: 2px dashed #3498db;
@@ -97,10 +92,9 @@ p {
 	margin-bottom: 18px;
 }
 
-/* Unified image styling */
 .image-placeholder {
 	width: 200px;
-	height: 266px;   /* keeps 3:4 ratio */
+	height: 266px;
 	border: 2px dotted #2980b9;
 	border-radius: 12px;
 	background-color: #f9f2e2;
@@ -118,9 +112,6 @@ figcaption {
 	margin: 0 auto;
 }
 
-/* ==============================
-   FOOTER TRACE
-============================== */
 footer p {
 	border: none;
 	background: none;
@@ -159,8 +150,10 @@ footer p {
 
 	<div class="step">
 		<b>ACTIVATE</b>
-		1. Press the white panel on the call point until it clicks and a yellow tab will appear.
-		2. Insert the red call point key, in the bottom of the call point and push until it clicks and the yellow panel will disappear.
+		<ol>
+			<li>Press the white panel on the call point until it clicks and a yellow tab will appear.</li>
+			<li>Insert the red call point key in the bottom of the call point and push until it clicks and the yellow panel will disappear.</li>
+		</ol>
 	</div>
 	<figure class="image-container">
 		<img src="images/activate-call-point.jpg"
@@ -170,7 +163,7 @@ footer p {
 
 	<div class="step">
 		<b>SIGNAL</b>
-		Alarm sounds. Allow system to operate for approximately 20 seconds.
+		Alarm sounds. Allow the system to operate for approximately 20 seconds.
 	</div>
 	<figure class="image-container">
 		<img src="images/alarm-sounders-operating.jpg"
@@ -190,7 +183,7 @@ footer p {
 
 	<div class="step">
 		<b>RESET</b>
-		Press the reset button ( It may take a few seconds).
+		Press the reset button (It may take a few seconds).
 	</div>
 	<figure class="image-container">
 		<img src="images/reset-system-panel.jpg"
